@@ -1,0 +1,42 @@
+
+.container{
+    text-align: center;
+}
+
+.inner {
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.inner .item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    border: 1px solid black;
+}
+
+.color1 {background-color: tomato;}
+.color2 {background-color: cornflowerblue;}
+.color3 {background-color: mediumseagreen;}
+.color4 {background-color: slateblue;}
+
+.color5 {background-color: hotpink;}
+.color6 {background-color: rgb(241, rgb(74, 138, 74), rgb(31, 31, 158))
+.color7 {background-color: #e15f41;}
+.color8 {background-color: #c44569;}
+
+.color9 {background-color: tomato;}
+.color10 {background-color: cornflowerblue;}
+.color11 {background-color: mediumseagreen;}
+.color12 {background-color: slateblue;}
+
+.color13 {background-color: hsl(147 ,50%, 47%);}
+.color14 {background-color: cornflowerblue;}
+.color15 {background-color: mediumseagreen;}
+.color16 {background-color: slateblue;}
+
+

@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; text-align: center;}
+
+.box {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.simple {
+    background: 
+        conic-gradient(red, yellow, green, blue, black);
+}
+
+.degree {
+    background: 
+        conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}/* 색상 옆에 각도를 줬음 */
+
+.pie {
+    background: 
+        conic-gradient( red 0deg, red 90deg,/* 레드에서 레드로감 >> 이렇게 하면 그냥 단색적용됨 */
+                        yellow 90deg, yellow 180deg,
+                        green 180deg, green 270deg,
+                        blue 270deg  );
+    border-radius: 50%;
+}
+
+.pie2 {
+    background: 
+        conic-gradient( red, yellow, green, blue, black  );
+    border-radius: 50%;
+}
+
+.position {
+    background: 
+        conic-gradient(at 70% 75%, red, yellow, green);
+}

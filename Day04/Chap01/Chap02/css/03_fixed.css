@@ -1,0 +1,65 @@
+
+h1 {text-align: center;}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+/* 여기 입력 다시해라 */
+}
+
+.container div{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    line-height: 200;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10%;/* 테두리의 뾰족한 정도를 덜어줌 */
+}
+
+.container .absolute {
+    position: fixed;    /* 브라우저를 기준으로 위치 설정 */
+    border: 3px solid black;
+}
+
+.container .base {
+    position: absolute;
+    border: 3px dashed #ddd;
+    color: #ddd;
+    z-index: -1;
+}
+.center { /* 이거는 함 고민해봐라 어떻게하면 화면 중간에 넣을 수 있는지  */
+    /* 50%씩 떨어뜨리면 조금 오른쪽 아래로 쳐진다.
+    자기자신의 50정도만큼 더 움직여줘야한다 */
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*  top, left 의 %는 부모요소에 대한 비율 */
+    /*  translate() 의 %는 해당요소에 대한 비율 */
+    /* translate(x축, y축) */
+}
+.first {top: 0; left: 0;}
+.second {top: 0; right: 0;}
+.third {bottom: 0; left: 0;}
+.fourth {bottom: 0; right: 0;}
+
+.fifth {top: 0; left: 500px;}
+.sixth { top: 200px; left: 500px;}
+.seventh {top: 400px; left: 500px;}
+.eighth {top: 600px ; left: 500px;}/*  */
+/* 여기 다시입력해라 */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 2.5rem;
+    color: #25a9bd;
+}
+
+section {
+    padding: 10px;
+}
+
+/* :first-of-type - 가장 처음 요소를 선택 */
+section:first-of-type {
+    /* 섹션: 중에서 첫번째거만 선택한다 */
+    color: #bc1212;
+}
+
+/* :last-of-type - 가장 마지막 요소를 선택 */
+/* ::first-letter - 첫 글자를 선택 */
+section:last-of-type::first-letter {
+    /* 섹션: 중에서 마지막 요소 선택해서 :: 첫번째 글자 선택 */
+    font-size: 2.4em;
+    float: left;
+    padding: 0 2px;
+    margin: -1px 3px 0 0;
+    font-weight: bold;
+    color: #f00;
+}
+
+section em {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*  :before
+    요소가 시작되기 전 */
+section em::before {
+    /* 섹션 중에 em 이라는 하위요소를 선택 */
+    /* 두번째섹션에 있음. */
+    /*  */
+    content: "\"";
+    /* 따옴표 들어간거임.따옴표 안에서 따옴표를 표기하고 싶다면 백슬래쉬 함께 써준다 */
+    padding-right: 0.5em;
+    /* 오른쪽 내부 여백 */
+}
+
+/* :after
+    요소가 끝난 다음 */
+section em::after {
+    content: "\"";
+    padding-left: 0.5em;
+    /* 그냥 편하게 따옴표 붙이면 되지만
+    em 태그가 붙는 모든 요소에는 앞으로 따옴표를 쓰고 싶다면 이렇게 쓴다. */
+}
+
+
+form label {
+    width: 100px;
+    display: inline-block;
+}
+
+form input {
+    height: 1.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px 5px;
+    outline: none;
+}
+
+/* :enabled
+    활성화된 태그를 선택
+*/
+input:enabled {
+    background-color: #beffff;
+}
+
+/* :focus
+    커서로 지정된 태그를 선택
+*/
+input:focus {
+    background-color: #82f9b7;
+    /* 클릭하면 좀 더 진한 에메랄드빛으로 변한다
+    포커스 기능은 이렇게 쓰는거임 */
+
+}
+
+/*  :disabled
+    비활성화된 태그를 선택
+ */
+input:disabled {
+    background-color: #c9c9c9;
+}
+
