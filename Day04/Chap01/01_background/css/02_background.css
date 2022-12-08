@@ -22,9 +22,9 @@
 }
 
 .back3 {
-    min-height: 600px;
+    min-height: 900px;  /* 9개 들어간다 사진 백그라운드 사이즈가 100px라서 */
     background-image: url(../img/aloha.png);
-    background-size: 200px;
+    background-size: 100px;     /* 이게 지금 사진 사이즈 말하는거구나.. */
     background-repeat: repeat-y; /* y 축으로만 이미지 반복 */
 }   
 .back4 {
@@ -36,32 +36,37 @@
 
 .left {
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 .right {
     background-repeat: no-repeat;
     background-position: right;
 }
 
-top.left {
+.center {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-left {
     background-size: 200px 190px;
     background-repeat: no-repeat;
     background-position: top left;
-
 }
-top.right {
+
+.top-right {
     background-size: 200px 190px;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right; /* 와이거 개소름이네 . 안붙이고 - 안붙이니까 완전 다른결과네 */
 
 }
-bottom.left {
+.bottom-left {
     background-size: 200px 190px;
     background-repeat: no-repeat;
     background-position: bottom left;
 
 }
-bottom.right {
+.bottom-right {
     background-size: 200px 190px;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -135,5 +140,6 @@ body {
 
  .short {
     background:  url(../img/aloha.png) no-repeat scroll left bottom / contain,
-                 url(../img/classroom/jpg) no-repeat scroll center center / cover;
+                 url(../img/classroom/jpg) no-repeat scroll center center / cover;  
+                 /* 이건 무슨뜻이었나...  */
  }

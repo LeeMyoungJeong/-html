@@ -20,13 +20,14 @@ li {
 }
 
 li:hover {
-    background-color: #ddd;
-    cursor: pointer;  
+    background-color: #ddd; /* ddd는 약간 옅은 회색에 가깝다 */
+    cursor: grab;  /* li 객체는 cursor 갖다 대면 화살표에서 포인터로 변환됨 */
+    /* grab 으로 바꾸니까 손바닥으로 잡는 포인터로 변경된다. */
 }
 
 /* 화면에 보이지 않게 지정 */
-.none {display: none;} /* 자리도 없앰 */
-.hidden {visibility: hidden;} /* 요소의 자리는 놔두고 보이지만 않게끔 출력 */
+.nones {display: none;} /* 자리도 없앰, 빨간색 명령어가 유효한 명령어임 */ 
+.hiddens {visibility: hidden;} /* 요소의 자리는 놔두고 보이지만 않게끔 출력 */
 
 /* 요소를 생성 > 랜더링 > 출력 */
 /* 
@@ -48,17 +49,17 @@ li:hover {
         Grid 레이아웃의 열의 크기를 지정하는 속성
         -여기서는 3개의 열의 크기를 auto로 지정
     */
-    grid-template-columns: auto auto auto;
-    background-color: royalblue;
-    padding: 10px;
+    grid-template-columns: auto auto auto;/* auto 로 지정하면 예쁘게 바둑판배열 완성시킨다 */
+    background-color: #ddd;
+    padding: 30px;
 
 
 }
 
 .itme {
     background-color: lightblue;
-    border:  1px solid black;
-    padding: 20px;
+    border:  30px solid black;
+    padding: 30px;
     text-align: center;
 }
 
@@ -74,13 +75,13 @@ li:hover {
 
 .col {
     flex-basis : 33.3333% ;/* 아이템의 기본 너비 */
-    min-width : 33.333%;
+    min-width : 33.3333%;
     padding : 0 4px;
     box-sizing : border-box;
 }
 
 .col img {
-    margin-top: 8px;
+    margin-top: 10px;
     vertical-align: middle;
     width: 100%;
 }
