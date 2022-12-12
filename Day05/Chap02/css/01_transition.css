@@ -22,8 +22,8 @@
 .transition2 { transition: height 2s;}
 .transition2:hover{height: 600px;}
 
-.transition3 { transition :width 1s, height 2s;}
-.transition:hover {width: 800px; height: 400px;}
+.transition3 { transition :width 1s, height 1s;}
+.transition3:hover {width: 800px; height: 400px;}
 
 .transition4,
 .transition5,
@@ -79,8 +79,9 @@
     height: 200px;
     background-color: coral;
 
-    transition-delay: 3s;
+    /* transition-delay: 3s; */
     transition-duration: 2s;
-
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* 오 큐빅베지어 이거 빠르고 좋네... */
 }
 .transition10:hover {width: 1400px;}
