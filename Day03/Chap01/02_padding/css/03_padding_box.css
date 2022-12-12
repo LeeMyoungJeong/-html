@@ -16,14 +16,14 @@
 
 }
 
-.box1 {
+.boxx1 {
     padding: 20px;
     line-height: 100px;
     box-sizing: content-box
     /* 기본값으로 지정된 컨텐츠 크기만 박스의 크기로 지정 */
 }
 
-.box2 {
+.boxx2 {
     padding: 20px;
     line-height: 60px;
     box-sizing: border-box;

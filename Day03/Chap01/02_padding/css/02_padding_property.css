@@ -2,8 +2,10 @@
 .container{
     position: relative;
     width: 1200px;
+    height: 900px;
     border: 5px dashed orange;
     margin: auto;
+    padding: 0;
     text-align: center;
 }
 
