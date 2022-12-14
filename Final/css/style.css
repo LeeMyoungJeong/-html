@@ -1,0 +1,180 @@
+:root {/* root 가상클래스를 사용하면 요소 하나를 지정해서 사용할 수 있다. 
+    앞으로 저 메인컬러가 사용하고 싶다면 
+    --main-color에 색깔을 선언해주면 된다 그러면 나중에 호출하기 편하다. */
+
+    --main-color: rgb(75, 200, 250); /* 여길 변경하니까 <나의>가 변경되었네??? */
+   /* rgb(75, 200, 250); */
+}
+/* 전체에 대해 사용하지 않을 속성들 지우고 가겠다.  --> 이거 무슨말인지 모르겠다. */
+/* *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+} */
+
+html { /* 제일 큰 html 이라는 요소  */
+    font-size: 20px; /* 폰트사이즈를 기본 20로 해줘서 가독성을 확보한다. */
+    overflow-x: hidden; 
+    /* 가로로 퍼지는 스크롤을 없애주는 기능 */
+    scroll-behavior : smooth; /* 스크롤 움직임을 부드럽게 해줌 */
+}
+
+body { /* 바디의 전체적인 요소를 지정해줌 */
+    background-color: aquamarine;/* 색은 아쿠아마린 */
+    padding-left: 35rem; /* body에 패딩을 600px만 주니까 header와 가까워졌다. */
+                        /* 이때의 35rem 값은 최상위 요소인 html의 font-size를 기준으로 한다. 
+                        1rem = 20px */
+}
+
+section {
+    min-height: 40vh;
+    padding: 1rem 5%;
+    /* ㅇㅋ감 잡았다. */
+}
+
+
+header {
+    position: fixed; /* 헤더는 포지션 고정 */
+    top: 0; left: 0 ;  bottom: 0; /* 여백 하나도 없어야 왼쪽이 회색으로 예쁘게 잘 나온다. 헤더를 레프트에 붙여놓으니까 그냥 레프트에 위치시킨것처럼 보이네 그리고 left가 먼저라 right을 지정해도 효과가 없다.*/ 
+    display: flex; /* display를 flex 해 놓아야 블럭처럼 켜켜이 쌓이지 않고 움직여줄 수 있게 된다 */
+    align-items: center; /* 요소들은 가운데정렬 */
+    justify-content: space-between; /* justify 세로축에 대해서 위아래 끄트머리에 배정될 수 있게끔 space-between해준다.  */
+    flex-direction: column; /* flex-direction은 column으로 해줘야 블럭처럼 세로로 정렬이 된다. */
+    width: 25rem;  /* 20~25 rem이 적당해보인다. */
+    padding: 6rem 1rem; /* 안으로부터의 넓이 위아래 6 좌우 1 rem 정도가 적당하다. */
+    text-align: center;  /* 가운데정렬보다 왼쪽정렬이 더 멋있어보이는 이유는 뭘까  */
+    background-color: rgb(94, 92, 92); /* 배경색은 진한 회색으로 하면 괜찮아보인다 */
+}
+
+header .logo {/* 나의 포트폴리오를 의미한다. */
+    color: white;  /* 글씨색은 흰색으로 */
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .logo span { /* span은 요소가 아니고 메소드라서 점(.)으로 하위요소 지정을 하면 안된다. */
+    color : var(--main-color);
+}
+header .navbar {
+    height: 30rem; /* navbar 자체의 성격을 지정해줌 */
+}
+header .navbar a{
+    display: block; /* block으로 해줘야 쌓이는 모양이됨 */
+    color: white;
+    margin: 1rem 0;
+    font-size: 1,5rem;
+
+}
+header .navbar a:hover{
+    color: var(--main-color)
+}
+
+header .sns a{
+    color : white;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+header .sns a:hover{
+    color: var(--main-color);
+}
+/* profile */
+.profile{
+    display : flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.profile .img{
+    flex: 1 1 50rem;
+}
+.profile .img img{
+    width: 100%;
+    max-width: 320px;
+}
+.profile .content{
+    flex: 1 1 50rem;
+}
+.profile .content .intro{
+    font-size: 2rem;
+    color: var(--main-color);
+
+}
+.profile .content h3 {
+    font-size: 4rem;
+    color: black;
+
+}
+
+.profile .content h3 span {
+    color: var(--main-color);
+
+}
+.profile .content .info {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.profile .content .text {
+    font-size: 1.2rem;
+    color: gray;
+
+}
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem ;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    background-color: royalblue ;
+
+}
+
+/* 슬라이드 */
+.slide-container {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+}
+
+
+
+.slide-container .slide {
+    width: 100%;
+    height: 480px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+
+.slide img { 
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.slide-nav {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+
+.slide-nav .slide {
+    width: auto;
+    height: 180px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+
+.slide-nav .slide:not(.slick-current) {
+    filter: brightness(20%);
+}

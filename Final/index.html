@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 포트폴리오</title>
+    <!-- FontAwesome -->
+    <!-- 이게 있어야 페이스북 아이콘을 쓸 수 있다. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+
+    <!-- slick 플러그인 -->
+    <!-- slick css CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- slick css FILE -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- slick js CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slikc js FILE -->
+    <script src="js/slick.min.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- ############ header 시작 ############-->
+    <header>
+        <a href="#" class="logo"> 
+            <!-- logo를 누르면 hyperink로 걸리게끔 a태그를 사용함 -->
+            <span>나의</span>포트폴리오<!-- (나의)에다가 색깔을 입힐 수 있도록 span 태그를 사용함 -->
+        </a><!-- a 태그 종료. -->
+        <nav class="navbar"><!-- 내비게이션할 수 있게 이름을 navbar라고 명명하여 호출 -->
+            <a href="#profile">profile</a>  <!-- navbar 안에는 클릭 시 다른곳으로 이동할 수 있게끔 a 태그로 하위요소를 만들어준다 -->
+            <a href="#about">about</a>      <!-- 그러니까 3개가 필요하다면 3개만 만들면 된다. -->
+            <a href="#experience">experience</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </nav> <!-- nav태그 종료 -->
+
+        <div class="sns"><!-- sns 마크들을 사용할 수 있게끔 div로 영역을 나눠 sns를 a 태그로 호출 -->
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div><!-- div태그 종료  -->
+    </header>
+    <!--############# header 끝 ############ -->  <!-- 자이제이거를 css로 디자인을 해주면 된다 좌측에 -->
+    
+    <!--############# profile 시작 ############ -->
+    <section class="profile" id="profile">
+    
+        <div class="content">
+            <span class="intro">안녕하세요 :) </span> <!-- span으로 지정한 영역은 기본값 색상이 적용된다. -->
+            <h3> 나는 <span> 김말콤입니다. </span></h3>
+            <p class="info"> 나는 빅데이터를 분석합니다.</p>
+            <p class="text">
+                자바 기반 웹어플리케이션 개발 및 데이터 분석 역량을 갖춘
+                빅데이터 분석 전문가입니다.
+            </p>
+            <a href="#about" class="btn">자세한 소개</a><!-- 이거 왜 about이 쓰인건가 ㅅㅂ 모르겠네 -->
+            <!-- ↑ 클릭 이벤트 발생 시 about으로 이동시키기 위한 관례임 -->
+        </div>
+    </section>
+        <div class="img">
+            <img src="img/profile.jpg" alt="">
+        </div>
+        <!--############# profile 끝 ############ -->
+        
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="slide-container">
+                <div class="slide"><img src="img/slide01.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide02.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide03.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide04.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide05.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide06.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide07.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide08.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide09.jpg" alt=""></div>
+                <div class="slide"><img src="img/slide10.jpg" alt=""></div>
+            </div>
+        
+    
+            <div class="slide-nav">
+                <div class="slide"><img src="img/slide01.jpg" alt="이미지01" title="이미지01"></div>
+                <div class="slide"><img src="img/slide02.jpg" alt="이미지02" title="이미지02"></div>
+                <div class="slide"><img src="img/slide03.jpg" alt="이미지03" title="이미지03"></div>
+                <div class="slide"><img src="img/slide04.jpg" alt="이미지04" title="이미지04"></div>
+                <div class="slide"><img src="img/slide05.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="img/slide06.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="img/slide07.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="img/slide08.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="img/slide09.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="img/slide10.jpg" alt="이미지05" title="이미지05"></div>
+            </div>
+        </section>
+</body>
+</html>
